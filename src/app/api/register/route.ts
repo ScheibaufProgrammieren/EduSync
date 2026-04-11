@@ -178,8 +178,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Basic server-side validation
-    if (!fullName || !email || !phone) {
-      return NextResponse.json({ error: "All fields are required." }, { status: 400 });
+    if (!fullName || !email) {
+      return NextResponse.json({ error: "Name and email are required." }, { status: 400 });
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json({ error: "Invalid email address." }, { status: 400 });
