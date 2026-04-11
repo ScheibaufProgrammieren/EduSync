@@ -59,9 +59,7 @@ export default function Navbar() {
               priority
               loading="eager"
               sizes="(max-width: 768px) 130px, 190px"
-              className={`object-contain object-left origin-left brightness-[1.4] filter drop-shadow-[0_0_15px_rgba(45,212,191,0.2)] transition-all duration-500 ${
-                isScrolled ? "scale-[1.8]" : "scale-[2.4]"
-              }`}
+              className="object-contain object-left origin-left brightness-[1.4] filter drop-shadow-[0_0_15px_rgba(45,212,191,0.2)] transition-all duration-500"
             />
           </div>
 
