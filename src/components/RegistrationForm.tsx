@@ -30,9 +30,7 @@ function validate(data: FormData): FormErrors {
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
     errors.email = "Invalid email";
   }
-  if (!data.phone.trim()) {
-    errors.phone = "Phone is required";
-  } else if (!/^\+?[\d\s\-().]{7,}$/.test(data.phone)) {
+  if (data.phone.trim() && !/^\+?[\d\s\-().]{7,}$/.test(data.phone)) {
     errors.phone = "Invalid phone format";
   }
   return errors;
@@ -265,15 +263,14 @@ export default function RegistrationForm() {
                   <div className="flex flex-col gap-2">
                     <Field
                       id="phone"
-                      label="Phone Number"
+                      label="Phone Number (Optional)"
                       icon={Phone}
                       error={errors.phone}
                       inputProps={{
                         type: "tel",
-                        placeholder: "+60 12-345 6789",
+                        placeholder: "+1 (555) 000-0000",
                         value: formData.phone,
-                        onChange: handleChange("phone"),
-                        autoComplete: "tel",
+                        onChange: (e) => setFormData({ ...formData, phone: e.target.value }),
                       }}
                     />
                     <div className="flex items-start gap-2 mt-1">

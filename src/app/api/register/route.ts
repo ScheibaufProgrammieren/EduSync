@@ -72,7 +72,7 @@ function buildAdminEmail(data: RegistrationData) {
                         <tr>
                           <td style="padding:16px;background:#1e293b;">
                             <p style="color:#94a3b8;font-size:11px;text-transform:uppercase;margin:0 0 4px;">Phone</p>
-                            <p style="color:#f8fafc;font-size:15px;margin:0;">${data.phone}</p>
+                            <p style="color:#f8fafc;font-size:15px;margin:0;">${data.phone.trim() || 'Not provided'}</p>
                           </td>
                         </tr>
                       </table>
