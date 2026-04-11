@@ -41,7 +41,7 @@ export default function AdminPage() {
     setError("");
 
     try {
-      const res = await fetch("/api/admin/registrations", {
+      const res = await fetch("/api/edusync-ops-77/registrations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ passcode }),
@@ -71,7 +71,7 @@ export default function AdminPage() {
     setBroadcastSuccess("");
 
     try {
-      const res = await fetch("/api/admin/broadcast", {
+      const res = await fetch("/api/edusync-ops-77/broadcast", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -122,7 +122,7 @@ export default function AdminPage() {
     if (!window.confirm(`Are you sure you want to permanently revoke ${name}'s spot in the masterclass?`)) return;
 
     try {
-      const res = await fetch("/api/admin/registrations", {
+      const res = await fetch("/api/edusync-ops-77/registrations", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ passcode, id }),

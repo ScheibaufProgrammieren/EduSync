@@ -69,7 +69,6 @@ export default function Footer() {
               <li><button onClick={() => document.getElementById('learn')?.scrollIntoView({behavior:'smooth'})} className="text-slate-400 hover:text-white transition-colors">Curriculum</button></li>
               <li><button onClick={() => document.getElementById('speaker')?.scrollIntoView({behavior:'smooth'})} className="text-slate-400 hover:text-white transition-colors">The Speaker</button></li>
               <li><button onClick={() => document.getElementById('register')?.scrollIntoView({behavior:'smooth'})} className="text-slate-400 hover:text-white transition-colors">Registration</button></li>
-              <li><a href="/admin" className="text-slate-500 hover:text-teal-400 flex items-center gap-1.5 group">Admin Portal <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100" /></a></li>
             </ul>
           </div>
 
