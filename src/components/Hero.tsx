@@ -108,7 +108,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400 mb-0.5">Date</p>
-                    <p className="text-lg font-semibold text-slate-200">March 16, 2026</p>
+                    <p className="text-lg font-semibold text-slate-200">April 16, 2026</p>
                   </div>
                 </div>
 

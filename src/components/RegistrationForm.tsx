@@ -47,7 +47,7 @@ interface FieldProps {
 function Field({ id, label, icon: Icon, error, inputProps }: FieldProps) {
   return (
     <div className="flex flex-col gap-1.5 relative group">
-      <label htmlFor={id} className="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400 pl-1">
+      <label htmlFor={id} className="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-200 pl-1">
         {label}
       </label>
       <div className="relative">
@@ -58,7 +58,7 @@ function Field({ id, label, icon: Icon, error, inputProps }: FieldProps) {
         <input
           id={id}
           className={cn(
-            "w-full bg-slate-900/50 backdrop-blur-xl rounded-xl px-11 py-3.5 text-slate-100 placeholder-slate-600 text-sm font-medium",
+            "w-full bg-slate-900/50 backdrop-blur-xl rounded-xl px-11 py-3.5 text-slate-100 placeholder-slate-400 text-sm font-medium",
             "transition-all duration-300 outline-none border",
             "focus:bg-slate-800/80 focus:shadow-[0_0_20px_rgba(45,212,191,0.1)]",
             error
@@ -274,8 +274,8 @@ export default function RegistrationForm() {
                       }}
                     />
                     <div className="flex items-start gap-2 mt-1">
-                      <AlertCircle className="w-3.5 h-3.5 text-slate-500 mt-0.5 shrink-0" />
-                      <span className="text-xs text-slate-500 leading-tight">
+                      <AlertCircle className="w-3.5 h-3.5 text-slate-300 mt-0.5 shrink-0" />
+                      <span className="text-xs text-slate-300 leading-tight">
                         Used exclusively for a brief SMS reminder before we go live.
                       </span>
                     </div>
