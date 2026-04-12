@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3 text-sm">
               <li className="flex items-center gap-3 text-slate-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-                March 16, 2026 · 5:00 PM
+                April 16, 2026 · 5:00 PM
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />

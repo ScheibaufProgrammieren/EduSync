@@ -123,7 +123,7 @@ function buildConfirmationEmail(data: RegistrationData) {
                       <table width="100%" cellpadding="16" cellspacing="0" style="background:#1e293b;border-radius:8px;margin-bottom:24px;">
                         <tr>
                           <td style="color:#cbd5e1;font-size:14px;border-bottom:1px solid #334155;">
-                            📅 &nbsp;<strong>March 16, 2026</strong>
+                            📅 &nbsp;<strong>April 16, 2026</strong>
                           </td>
                         </tr>
                         <tr>

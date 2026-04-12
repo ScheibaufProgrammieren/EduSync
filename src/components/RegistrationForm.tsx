@@ -53,7 +53,7 @@ function Field({ id, label, icon: Icon, error, inputProps }: FieldProps) {
       <div className="relative">
         <Icon className={cn(
           "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors duration-300 pointer-events-none",
-          error ? "text-rose-400" : "text-slate-500 group-focus-within:text-teal-400"
+          error ? "text-rose-400" : "text-slate-300 group-focus-within:text-teal-400"
         )} />
         <input
           id={id}

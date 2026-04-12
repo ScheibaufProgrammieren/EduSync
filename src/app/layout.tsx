@@ -12,7 +12,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Exclusive Masterclass: Mastering Productivity | EduSync 2026",
   description:
-    "Join our high-impact webinar on March 16, 2026. Conquer your academic workload and master time management with the EduSync research-backed framework. Limited spots available.",
+    "Join our high-impact webinar on April 16, 2026. Conquer your academic workload and master time management with the EduSync research-backed framework. Limited spots available.",
   openGraph: {
     title: "Mastering Productivity: The EduSync Masterclass",
     description: "Reclaim your academic focus with research-backed strategies.",
